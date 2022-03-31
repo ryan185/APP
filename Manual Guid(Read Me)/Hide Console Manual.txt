@@ -1,0 +1,14 @@
+link - https://www.winhelponline.com/blog/run-bat-files-invisibly-without-displaying-command-prompt/
+
+
+Let’s say we have a file named syncfiles.bat in C:\Batch Files directory. Let’s launch it in hidden mode using Windows Scripting.
+
+1. Copy the following lines to Notepad.
+		Set WshShell = CreateObject("WScript.Shell") 
+		WshShell.Run chr(34) & "C:\Batch Files\syncfiles.bat" & Chr(34), 0
+		Set WshShell = Nothing
+Note: Replace the batch file name/path accordingly in the script according to your requirement.
+
+2. Save the file with .VBS extension, say launch_bat.vbs
+3. Edit the .BAT file name and path accordingly, and save the file.
+4. Double-click to run the launch_bat.vbs file, which in-turn launches the batch file syncfiles.bat invisibly.

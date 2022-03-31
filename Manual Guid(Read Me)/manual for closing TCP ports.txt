@@ -1,0 +1,8 @@
+How to close Hidden Command Wnidows's TCP ports?
+
+1. Run command window as admin
+
+2. Type these:
+
+   >>> netstat -ano 
+   >>> taskkill /f /im [PID of the "Local Address" got from previous command]

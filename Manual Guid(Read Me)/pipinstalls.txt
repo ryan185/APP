@@ -1,0 +1,42 @@
+***Libraries neet to install on First Time Set Up***
+=======================================================
+
+1. Pip Installation ("get-pip.py" file must be in the current directory)
+	
+	>py get-pip.py --proxy=http://proxy.fc.obayashi.co.jp:8080
+
+2. PyMongo (After MongoDB EXE Installation)
+	
+	>py -m pip install pymongo --proxy=http://proxy.fc.obayashi.co.jp:8080
+
+3. Flask 
+	
+	>py -m pip install Flask --proxy=http://proxy.fc.obayashi.co.jp:8080
+
+4. Pandas 
+	
+	>py -m pip install pandas --proxy=http://proxy.fc.obayashi.co.jp:8080
+
+5. PyGame 
+	
+	>py -m pip install pygame --proxy=http://proxy.fc.obayashi.co.jp:8080
+
+6. LiveReload 
+	
+	>py -m pip install livereload --proxy=http://proxy.fc.obayashi.co.jp:8080
+
+7. Reportlab 
+	
+	>py -m pip install reportlab --proxy=http://proxy.fc.obayashi.co.jp:8080
+
+8. Xlrd 
+	
+	>py -m pip install xlrd --proxy=http://proxy.fc.obayashi.co.jp:8080
+
+9. Matplotlib 
+	
+	>py -m pip install matplotlib --proxy=http://proxy.fc.obayashi.co.jp:8080
+
+10. Psutil
+	
+	>py -m pip install psutil --proxy=http://proxy.fc.obayashi.co.jp:8080

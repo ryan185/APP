@@ -1,0 +1,30 @@
+***How to Set Up Python on Sublime Text***
+=======================================================
+
+1. Open SublimeText Software
+
+2. Tools > Build System > New Build System
+
+Here we need to find the python path and paste the same 
+
+in cmd promt using
+
+py
+import sys
+print(sys.executable)
+
+3. Copy and Paste the following:
+
+{
+    "cmd": ["C:/Users/useradmin/AppData/Local/Programs/Python/Python38-32/python.exe", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python"
+}
+
+4. Change Python file location of current computer in the above paragraph
+
+5. Save it with a name you like (e.g "Python3")
+
+6. Write and save a simple Python program and run it with (ctrl + B). Choose the name you gave(here, it's "Python3")
+
+After doing these, python files should be able to be run any Python program by just using shortcut (ctrl + B)

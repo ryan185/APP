@@ -1,0 +1,26 @@
+***File Names in which URLs should be updated on First Time Set Up***
+=========================================================================
+
+1. app.py (1)
+
+	>@ app.route ('pdfdownload')
+	>return send_file('C:\\Users\\useradmin\\Desktop\\key\\new style\\pdf\\KeyInfo.pdf', attachment_filename='KeyInfo.pdf', as_attachment=True)
+
+2. app.py (1)
+
+	>if __name__ == '__main__':
+	>handler = logging.FileHandler('C:\\Users\\useradmin\\Desktop\\key\\new style\\Log Folder\\MainPage.log', 'w', 'utf-8')
+
+3. graphclass.py (3)
+
+	>fig.savefig("C:\\Users\\useradmin\\Desktop\\key\\new style\\static\\photo\\dategraph.png",bbox_inches='tight')
+
+4. downloadpdf.py (1)
+
+	>file_out = "C:\\Users\\useradmin\\Desktop\\key\\new style\\pdf\\KeyInfo.pdf"
+
+5. clientlog.py (15)
+
+	>handler = logging.FileHandler('C:\\Users\\useradmin\\Desktop\\key\\new style\\Log Folder\\MainPage.log', 'w', 'utf-8')
+	>mixer.music.load('C:\\Users\\useradmin\\Desktop\\key\\new style\\mp3\\EK-01587.mp3')
+	>csv.reader(open("C:\\Users\\useradmin\\Desktop\\大林組_顔認証と鍵管理システムのデータ連携2019_07_04\\testdata.csv",'r',encoding='UTF-16'))

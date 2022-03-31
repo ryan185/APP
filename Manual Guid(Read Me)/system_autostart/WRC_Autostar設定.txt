@@ -1,0 +1,38 @@
+0. (/home/pi/.configより/autostartフォルダを削除)
+1. ServerC.serviceを"/etc/systemd/system/"に配置
+2. terminalにて"sudo systemctl enable ServerC.service"
+3. reboot
+
+Note - if copy paste didnt work  for ServerC.service then
+       
+       1.  sudo nano /lib/systemd/system/ServerC.service 
+           Copy the below  code
+       
+
+
+
+以下内容
+
+[Unit]
+Description=serverC  //適当な名称
+Wants=network-online.target  //ServerC.serviceを使用するのに必要な前提UNIT（Ethernetモジュールの起動）
+After=network-online.target  //前提UNITの起動後にサービスを立ち上げ
+ 
+[Service]
+ExecStart=/home/pi/autostart.sh  //起動対象
+Restart=always  //サービス立ち上げ失敗時・再起動の有無
+Type=simple  //サービスプロセスの起動完了の判定方法（デフォルトは「simple」）
+RestartSec = 10  //失敗後の再起動時間
+StartLimitBurst = 60  //失敗許容回数
+
+[Install]
+WantedBy=multi-user.target  //enable時にこのUnitの.wantsディレクトリにリンクを作成する
+
+
+
+2.  sudo chmod 644 /lib/systemd/system/ServerC.service
+
+3.  sudo systemctl daemon-reload
+
+
+4.   sudo systemctl enable sample.service

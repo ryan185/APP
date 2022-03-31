@@ -1,0 +1,43 @@
+　　　　　　　        ***Steps to Follow on First Time Set Up of KeyGUI***
+===============================================================================================
+===============================================================================================
+
+1. Python EXE Installation
+
+2. Pip Installation ("get-pip.py" file must be in the current directory)
+	
+	>py get-pip.py --proxy=http://proxy.fc.obayashi.co.jp:8080
+	
+3. Sublime Text3 EXE Installation
+
+4. Set Up Python on Sublime Text3 (See Manual Guide for details) 
+	
+5. MongoDB and MongoDB Compass EXE Installation 
+
+6. Pip Installations of required libraries (See Manual Guide for details)
+	
+7. Create a folder named "key" on your desktop and copy "newstyle" folder into "key" folder
+
+8. Create Databases (Run programs of "databases" folder) 
+	
+	>It can be finished with just "ctrl + B" but ***be careful not to run
+	 the same program for two times***
+
+9. Change URLs within the programs (See Manual Guide for details)
+
+10. Copy "Fonts" folder on "C:" of your computer
+	
+11. Add "Classic Cache Killer Extension" to chrome 
+	
+	>Just search "classic cache killer" on chrome and click "Add Extensions"
+	>Change "OFF" to "ON"
+
+12. Copy "大林組_顔認証と鍵管理システムのデータ連携2019_07_04" folder on your desktop
+
+13. Bookmark URLs on Chrome
+    ("http://127.50.0.5:200/box1" as "BOX1" and "http://127.50.0.5:200/box2" as "BOX2") 
+
+14. Try running programs from batch files and if it worked, stop with "ctrl + C"
+    and run .vbs files
+
+15. For stopping the execution, follow the steps of Manual Guide

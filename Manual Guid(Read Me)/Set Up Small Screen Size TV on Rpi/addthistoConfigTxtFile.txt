@@ -1,0 +1,7 @@
+max_usb_current = 1
+
+hdmi_group = 2
+
+hdmi_mode = 82
+
+hdmi_cvt 1920 1080 60 6 0 0 0
